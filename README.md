@@ -157,5 +157,3 @@ Taiga0727
 Designed for algorithm learning, visualization, and educational projects.
 
 ---
-  "edges": [{ "u": 0, "v": 1, "w": 10 }]
-}
