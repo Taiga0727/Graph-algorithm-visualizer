@@ -138,5 +138,3 @@ Clean state-machine handling:
 
 📜 License
   This project uses the MIT License.
-git clone https://github.com/your-username/graph-algorithm-visualizer.git
-cd graph-algorithm-visualizer
