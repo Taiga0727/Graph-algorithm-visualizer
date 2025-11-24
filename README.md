@@ -1,7 +1,7 @@
 # Graph Algorithms Visualizer
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%2020lightgrey))
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
