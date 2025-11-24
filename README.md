@@ -7,9 +7,6 @@ Supports node creation, weighted edges, dynamic editing, and step-by-step animat
 
 ## 🖼️ Overview
 
-*(Preview Screenshot — replace with your own later)*  
-https://your-image-link-here.com/screenshot.png
-
 This tool lets you build graphs visually and run algorithms like DFS, BFS, Dijkstra, Prim, and Kruskal with live animations.
 
 ---
@@ -97,15 +94,7 @@ python graph_gui.py
     Prim MST
     Kruskal MST
     Then select the required start/target node(s).
-
-📂 Project Structure
-```bash
-graph-algorithm-visualizer/
-│
-├── graph_gui.py          # Main Tkinter program
-├── README.md             # Project documentation
-└── (optional links or assets if added later)
-```
+    
 📘 Technical Notes
 
 Node list stored in:
