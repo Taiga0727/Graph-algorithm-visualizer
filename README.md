@@ -1,129 +1,163 @@
-# Graph Algorithm Visualizer (Python + Tkinter)
+# Graph Algorithms Visualizer
 
-An interactive tool for visualizing classic graph algorithms through an intuitive Tkinter-based GUI.  
-Supports node creation, weighted edges, dynamic editing, and step-by-step animations for every algorithm.
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+An interactive **desktop GUI application** for creating graphs and visualizing classical graph algorithms  
+with smooth animations, a modern dark UI, and intuitive editing tools.  
+Built using **Python + Tkinter**, with clean algorithm logic preserved exactly as in theory.
 
 ---
 
-## 🖼️ Overview
+## 🚀 Download Executable (.exe)
 
-This tool lets you build graphs visually and run algorithms like DFS, BFS, Dijkstra, Prim, and Kruskal with live animations.
+You can download the latest pre-built executable here:
+
+👉 **GitHub Releases:**  
+https://github.com/YOUR-USERNAME/YOUR-REPO/releases
+
+(Replace YOUR-USERNAME / YOUR-REPO after creating your repository)
 
 ---
 
-## 🚀 Features
+## ✨ Supported Algorithms
 
-### 🧩 Graph Editing
+All algorithms use **textbook-accurate, untouched original logic**:
+
+- **DFS – Depth-First Search Spanning Tree**
+- **BFS – Breadth-First Search Spanning Tree**
+- **Dijkstra – Shortest Path**
+- **Prim – Minimum Spanning Tree (starting from a root)**
+- **Kruskal – Minimum Spanning Tree (Union-Find)**
+
+Each algorithm displays:
+
+- Step-by-step expansion  
+- Highlighted edges and nodes  
+- Execution order  
+- Live animation on the graph  
+- Result summary panel  
+
+---
+
+## 🧩 Graph Editor Features
+
 - Click to **create nodes** (A, B, C, …)
-- Click node → click another → **add weighted edge**
-- **Move nodes** (drag & drop)
-- **Delete node** or **delete edge**
-- Reset colors / Clear graph
-- Smooth redrawing for all updates
+- Click node → node to **create weighted edges**
+- **Drag nodes** to move their positions
+- **Select multiple nodes** with a box selection tool
+- Delete node / delete edge / delete selected
+- **Run algorithms with animations**
+- Save graph to `.json`
+- Load graph back anytime
 
 ---
 
-## 🔍 Supported Algorithms (with animation)
+## 🖱️ Tools Overview
 
-| Algorithm      | Description |
-|----------------|-------------|
-| **DFS**        | Depth-First Search spanning tree |
-| **BFS**        | Breadth-First Search spanning tree |
-| **Dijkstra**   | Shortest path from source to target |
-| **Prim MST**   | Minimum Spanning Tree |
-| **Kruskal MST**| Global MST using Union-Find |
+### **Draw / Add**
+- Click empty canvas → create node  
+- Click node → other node → create edge (weight dialog pops up)
 
-All algorithms preserve their **original textbook logic** from your original non-GUI code.
+### **Mouse / Pan Mode**
+- Click node → select  
+- Drag empty space → pan canvas  
+- Scroll → zoom  
+- Ctrl + Scroll → fast zoom  
+
+### **Select Nodes**
+- Drag a rectangle → select multiple nodes
+
+### **Move Nodes**
+- Drag selected nodes → move as a group
+
+### **Delete Node / Delete Edge**
+- Click to remove individual nodes or edges
+
+### **Delete Selected**
+- Remove all highlighted nodes in one action
 
 ---
 
-## 🎨 GUI Highlights
-- ✔ Dark mode UI  
-- ✔ Smooth animations  
-- ✔ Edge highlighting on algorithm steps  
-- ✔ Color-coded nodes  
+## 🔍 Zoom & View Controls
+
+- **Mouse Wheel** → zoom in/out  
+- **Ctrl + Wheel** → faster zoom  
+- View menu provides + / − zoom buttons as well  
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+- **Delete / Backspace**
+  - If nodes are selected → delete nodes  
+  - If nothing selected → delete nearest edge  
+
+---
+
+## 📊 Result Panel (Bottom-Right)
+
+Includes:
+
+- Full step list of algorithm execution  
+- Live-updating logs  
+- Card-style hover animation  
+- Node coloring:
   - 🟩 Source  
   - 🟧 Target  
   - 🟡 Visited / Path  
 
-## 🛠️ Installation
+---
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/your-username/graph-algorithm-visualizer.git
-cd graph-algorithm-visualizer
+## 💾 Saving & Loading Graphs
+
+### Save
+**File → Save As…**  
+Exports a `.json` file with:
+
+```json
+{
+  "nodes": [{ "x": ..., "y": ... }],
 ```
-2️⃣ Install dependencies
 
-No external libraries required (only Python standard library).
+Load
 
-Python 3.8+ recommended.
+File → Open…
+Reads a previously saved graph and redraws it.
 
-3️⃣ Run the program
+💻 Running from Source
+
+Install Python 3.8+
+
+Create a file graph_visualizer.py
+
+Paste the full code
+
+Run:
 ```bash
-python graph_gui.py
+python graph_visualizer.py
 ```
-📌 How to Use
-
-➤ Create Nodes
-
-  Click anywhere on the canvas to create a node (A, B, C…).
-
-➤ Create Edges
-
-  Click node u
-  Click node v
-  Enter weight in popup dialog
-
-➤ Move Nodes
-
-  Click Move nodes
-  Drag node to reposition
-
-➤ Delete
-
-  Delete node → click node
-  Delete edge → click edge line or weight text
-
-➤ Run Algorithms
-
-  Choose:
-    DFS
-    BFS
-    Dijkstra
-    Prim MST
-    Kruskal MST
-    Then select the required start/target node(s).
-    
-📘 Technical Notes
-
-Node list stored in:
+📁 Project Structure
 ```bash
-self.node_positions
+GraphAlgorithmsVisualizer/
+│
+├── graph_visualizer.py      # Main application
+├── README.md                # Documentation
+└── /releases                # (optional) compiled executables on GitHub
 ```
-Graph stored using adjacency list (unchanged from original logic)
 
-Uses root.after() for animation timing
+📝 License
 
-Clean state-machine handling:
-  build
-  move
-  dfs/bfs/prim
-  dijkstra source/target
-  delete node / delete edge
+This project is distributed under the MIT License.
+You may fork, use, and modify freely while crediting the original author.
 
 👨‍💻 Author
 
-  Created by Taiga0727 , Ter , Wu
-  A tool for learning, visualizing, and experimenting with graph algorithms.
+Taiga0727
+Designed for algorithm learning, visualization, and educational projects.
 
-⭐ Future Improvements
-
-  Save/load graph as JSON
-  Export canvas as PNG
-  Support directed edges
-  Add Bellman–Ford & Floyd–Warshall
-  Speed control for animations
-
-📜 License
-  This project uses the MIT License.
+---
+  "edges": [{ "u": 0, "v": 1, "w": 10 }]
+}
