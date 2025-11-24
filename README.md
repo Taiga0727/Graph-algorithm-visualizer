@@ -125,7 +125,7 @@ Clean state-machine handling:
 
 👨‍💻 Author
 
-  Created by Taiga0727
+  Created by Taiga0727 , Ter , Wu
   A tool for learning, visualizing, and experimenting with graph algorithms.
 
 ⭐ Future Improvements
