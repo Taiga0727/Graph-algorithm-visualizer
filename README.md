@@ -16,7 +16,6 @@ Built using **Python + Tkinter**, with clean algorithm logic preserved exactly a
 You can download the latest pre-built executable here:
 
 👉 **GitHub Releases:**  
-https://github.com/Taiga0727/Graph-algorithm-visualizer/blob/main/graph_gui.exe
 https://github.com/Taiga0727/Graph-algorithm-visualizer/blob/main/2graph_gui.exe
 
 ---
