@@ -15,6 +15,7 @@ def index_to_letters(i: int) -> str:
     """แปลง 0 -> 1, 1 -> 2, ..."""
     return str(i + 1)
 
+
 def format_vertex(i: int) -> str:
     return index_to_letters(i)
 
